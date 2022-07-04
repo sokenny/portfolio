@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+
+.Profile{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: $pxs4;
+
+    .info{
+
+        .main{
+            margin-bottom: 20px;
+            
+            @include mobile{
+                display: flex;
+                margin-bottom: 0;
+            }
+
+            h1{
+                font-size: $fs5;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin: 0;
+            }
+            
+            h2{
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: $fs4;
+            }
+        }
+
+        .description{
+            font-size: $fs5;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../../styles/variables';
+
+.Portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    >div{
+        width: 100%;
+    }
+
+}

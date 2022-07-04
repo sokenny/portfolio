@@ -1,0 +1,43 @@
+$sp1: 0 25%; 
+
+$pxs1: 8px;
+$pxs2: 16px;
+$pxs3: 32px;
+$pxs4: 64px;
+$pxs5: 128px;
+
+$fs1: 12px;
+$fs2: 14px;
+$fs3: 16px;
+$fs4: 18px;
+$fs5: 24px;
+$fs6: 32px;
+
+$mobile: 800px;
+$smallDesktop: 1050px;
+$desktop: 1300px;
+$bigDesktop: 1600px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin smallDesktop {
+    @media (max-width: #{$smallDesktop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin bigDesktop {
+    @media (min-width: #{$bigDesktop}) {
+        @content;
+    }
+}

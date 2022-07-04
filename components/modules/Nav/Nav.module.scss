@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.Nav{
+    padding: $sp1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: $fs5;
+    font-weight: bolder;
+    color: #424242;
+    margin-bottom: $pxs3;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    div:hover{
+        color: white;
+        cursor: pointer;
+    }
+}
