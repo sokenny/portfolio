@@ -1,0 +1,16 @@
+@import '../../../styles/variables';
+
+.HeaderProject{
+
+    .slider{
+        position: relative;
+        width: 100%;
+        margin-bottom: $pxs2;
+    }
+
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}

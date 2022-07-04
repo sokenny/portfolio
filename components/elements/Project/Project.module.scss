@@ -1,0 +1,61 @@
+@import '../../../styles/variables';
+
+.Project{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+    .poster, .info{
+        width: 50%;
+        border: 2px solid white;
+        padding: 40px;
+
+        @include mobile{
+            width: 100%;
+            padding: 25px 15px;
+        }
+    }
+
+    .poster{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: none;
+
+        @include mobile{
+            border-bottom: none;
+            border-right: 2px solid white;
+        }
+    }
+
+    .name{
+        font-weight: bold;
+        font-size: 1.4em;
+        margin: 0;
+    }
+
+    .description{
+        font-size: $fs2;
+        margin-top: $pxs1;
+    }
+
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        margin: $pxs3 0;
+    }
+
+    .cta {
+        border-bottom: 2px solid white;
+        width: fit-content;
+        font-size: $fs3;
+        font-weight: bold;
+        padding-bottom: 2px;
+        cursor: pointer;
+    }
+
+}

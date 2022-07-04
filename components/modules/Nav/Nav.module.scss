@@ -2,16 +2,32 @@
 
 .Nav{
     padding: $sp1;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: $fs5;
+    padding-top: $pxs1;
+    padding-bottom: $pxs1;
+    font-size: $fs4;
     font-weight: bolder;
     color: #424242;
-    margin-bottom: $pxs3;
     border-bottom: 1px solid rgba(255,255,255,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    div:hover{
+    .domain:hover{
         color: white;
         cursor: pointer;
+    }
+
+    .links{
+        display: flex;
+        font-size: $fs3;
+        margin: 0;
+
+        li{
+            margin-right: $pxs1;
+        }
+        
+        li:last-child{
+            margin-right: 0;
+        }
     }
 }

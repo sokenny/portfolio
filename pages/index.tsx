@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Nav from '@/components/modules/Nav/Nav';
 import Profile from '@/components/modules/Profile/Profile';
 import Portfolio from '@/components/modules/Portfolio/Portfolio';
 import styles from '../styles/Home.module.scss';
@@ -11,7 +10,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Juan Chaher | Full Stack Web Developer</title>
       </Head>
-      <Nav />
       <main>
         <Profile />
         <Portfolio />        
