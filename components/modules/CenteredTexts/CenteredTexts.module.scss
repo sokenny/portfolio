@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+
+.CenteredTexts{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: $pxs4 0;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    >div{
+        width: 30%;
+
+        @include mobile{
+            width: 100%;
+            margin-bottom: $pxs2;
+        }
+
+        .title{
+            margin-bottom: $pxs1;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+}

@@ -2,6 +2,9 @@
 import * as content from '@/utils/content/mytaggie';
 import Head from 'next/head';
 import HeaderProject from '@/components/modules/HeaderProject/HeaderProject';
+import CenteredTexts from '@/components/modules/CenteredTexts/CenteredTexts';
+import CenteredIcons from '@/components/modules/CenteredIcons/CenteredIcons';
+import AssetAndText from '@/components/modules/AssetAndText/AssetAndText';
 import { NextPage } from "next";
 import styles from '../styles/MyTaggie.module.scss';
 
@@ -15,14 +18,14 @@ const MyTaggie:NextPage = ({}) => {
             <div className={styles.MyTaggie}>
                 
                 <HeaderProject project={content.project} />
-                {/* <HeaderProject project={project} />
-                <CenteredTexts texts={texts} id={1} />
+                <CenteredTexts texts={content.texts} />
+                <AssetAndText data={content.assetsAndText[0]} project={content.project} />
+                <AssetAndText data={content.assetsAndText[1]} project={content.project} />
+                <CenteredIcons icons={content.icons} project={content.project} />
                 
-                <AssetAndText data={assets[0]} index={0} project={project} />
+                {/*                 
 
-                <AssetAndText data={assets[1]} index={1} project={project} />
 
-                <CenteredIcons icons={icons} project={project} />
 
                 <AssetAndText data={assets[2]} index={2} project={project} />
 

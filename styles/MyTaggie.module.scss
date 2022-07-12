@@ -3,4 +3,8 @@
 .MyTaggie{
     padding: $sp1;
     padding-top: $ppt;
+
+    @include mobile{
+        padding: $sp1Mobile;
+    }
 }

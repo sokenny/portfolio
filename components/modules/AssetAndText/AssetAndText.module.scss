@@ -1,0 +1,46 @@
+@import '../../../styles/variables';
+
+.AssetAndText{
+    padding: $pxs4 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+    >div{
+        width: 50%;
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    .asset{
+        position: relative;
+
+        @include mobile{
+            margin-bottom: $pxs3;
+        }
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0 $pxs5;
+
+        @include mobile{
+            padding: 0;
+        }        
+
+        .title{
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: $pxs1;
+        }
+    }
+
+}

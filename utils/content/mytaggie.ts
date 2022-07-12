@@ -1,12 +1,12 @@
-import { ProjectType } from "types";
+import { ProjectType, TextsType, AssetAndTextType, IconType } from "types";
 import { projects } from "../index";
 
 export const project:ProjectType = projects[0]
 
-export const texts = [
-    {title: "industry", des: "Project management software."},
-    {title: "client", des: "Adrian Alvarado, a Mexico based entrepreneur & arquitect."},
-    {title: "duration", des: "7 sprints. 9 months."}
+export const texts:TextsType[] = [
+    {title: "industry", description: "Project management software."},
+    {title: "client", description: "Adrian Alvarado, a Mexico based entrepreneur & arquitect."},
+    {title: "duration", description: "7 sprints. 9 months."}
 ]
 
 export const integrations = [
@@ -14,10 +14,12 @@ export const integrations = [
     {name:'paypal', des: 'dynamic user subscriptions'},
 ]
 
-export const assets = [
+export const assetsAndText:AssetAndTextType[] = [
     {
         asset:{
-            src:"mytaggie/wire-components.svg"
+            src:"mytaggie/wire-components.svg",
+            width: 470,
+            height: 271
         }, 
         text:{
             title: "wireframes",
@@ -26,7 +28,9 @@ export const assets = [
     },
     {
         asset:{
-            src:"mytaggie/components.png"
+            src:"mytaggie/components.png",
+            width: 1235,
+            height: 708
         }, 
         text:{
             title: "functional components",
@@ -45,10 +49,10 @@ export const assets = [
     }
 ]
 
-export const icons =[
-    {title: "multimedia", des: "Work with images, videos and .pdf files.", src: "multimedia.png"},
-    {title: "validate", des: "Share project related polls for feedback.", src: "valida.png"},
-    {title: "collaborate", des: "Take on team projects collaboratively.", src: "colabora.png"},
+export const icons:IconType[] =[
+    {title: "multimedia", description: "Work with images, videos and .pdf files.", src: "multimedia.png"},
+    {title: "validate", description: "Share project related polls for feedback.", src: "valida.png"},
+    {title: "collaborate", description: "Take on team projects collaboratively.", src: "colabora.png"},
 ]
 
 export const process = {col1: "Taggie allows users to create projects and share them with friends and co-workers. It is equiped with an integrated chat and user generated polls among many other features that allow collaborative work.", col2: "It was the most robust front-end project I had the opprtunity to engage with. The high dimension of nested components displayed the importance of working with a deliberate modular design system."}
